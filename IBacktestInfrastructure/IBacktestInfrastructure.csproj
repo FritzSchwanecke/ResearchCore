@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FB03FDB5-8C41-4AE0-893E-2C3F4424304D}</ProjectGuid>
+    <ProjectGuid>{7D405680-465F-40BC-865E-5D0A93F7E5E1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>IReserachCore</RootNamespace>
-    <AssemblyName>IReserachCore</AssemblyName>
+    <RootNamespace>IBacktestInfrastructure</RootNamespace>
+    <AssemblyName>IBacktestInfrastructure</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -48,14 +48,8 @@
     <Reference Include="Carbon.Versioning, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Carbon.Versioning.1.5.0\lib\netstandard2.0\Carbon.Versioning.dll</HintPath>
     </Reference>
-    <Reference Include="CommonServiceLocator, Version=2.0.3.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unity.5.8.6\lib\net46\CommonServiceLocator.dll</HintPath>
-    </Reference>
     <Reference Include="GitHub, Version=1.12.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\GitHub.1.12.1\lib\netstandard2.0\GitHub.dll</HintPath>
-    </Reference>
-    <Reference Include="JetBrains.Annotations, Version=2018.2.1.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
-      <HintPath>..\packages\JetBrains.Annotations.2018.2.1\lib\net20\JetBrains.Annotations.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -74,64 +68,15 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="Unity.Abstractions, Version=3.3.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unity.5.8.6\lib\net46\Unity.Abstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Configuration, Version=5.2.1.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unity.5.8.6\lib\net46\Unity.Configuration.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Container, Version=5.8.6.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unity.5.8.6\lib\net46\Unity.Container.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Interception, Version=5.5.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unity.5.8.6\lib\net46\Unity.Interception.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Interception.Configuration, Version=5.1.4.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unity.5.8.6\lib\net46\Unity.Interception.Configuration.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RegistrationByConvention, Version=2.1.5.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unity.5.8.6\lib\net46\Unity.RegistrationByConvention.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ServiceLocation, Version=2.1.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unity.5.8.6\lib\net46\Unity.ServiceLocation.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Helper\Functions\IErfc.cs" />
-    <Compile Include="Helper\Functions\INormalDistribution.cs" />
-    <Compile Include="Helper\Time\Compounder\ICompounder.cs" />
-    <Compile Include="Helper\Time\Compounder\IDiscreteCompounder.cs" />
-    <Compile Include="Helper\Time\DayCounter\eDcConvention.cs" />
-    <Compile Include="Helper\Time\DayCounter\IDayCounter.cs" />
-    <Compile Include="Helper\Time\DayCounter\IDcAct360.cs" />
-    <Compile Include="Helper\Time\IHolidayCalendar.cs" />
-    <Compile Include="IHelloWorld.cs" />
-    <Compile Include="Instruments\Cash\eIndexType.cs" />
-    <Compile Include="Instruments\Cash\eRatesPosition.cs" />
-    <Compile Include="Instruments\Cash\IDeposit.cs" />
-    <Compile Include="Instruments\Cash\IEquityIndex.cs" />
-    <Compile Include="Instruments\eCurrency.cs" />
-    <Compile Include="Instruments\Forwards\IForward.cs" />
-    <Compile Include="Instruments\Options\eOptionType.cs" />
-    <Compile Include="Instruments\Options\IContainerSingleAssetOption.cs" />
-    <Compile Include="Instruments\Options\ISingleAssetOption.cs" />
-    <Compile Include="Interpolation\1D\eInterpolationMethod.cs" />
-    <Compile Include="Interpolation\1D\ILinearInterpolation.cs" />
-    <Compile Include="Pricer\BlackScholes\IPeterJaeckleAnalyticalInversePricing.cs" />
-    <Compile Include="Pricer\BlackScholes\IPeterJaeckleAnalyticalPricing.cs" />
-    <Compile Include="Pricer\BlackScholes\IRiskFigures.cs" />
-    <Compile Include="Pricer\Dividends\IImpliedDividends.cs" />
+    <Compile Include="eAction.cs" />
+    <Compile Include="IPosition.cs" />
+    <Compile Include="IPositionHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\IBacktestInfrastructure\IBacktestInfrastructure.csproj">
-      <Project>{7d405680-465f-40bc-865e-5d0a93f7e5e1}</Project>
-      <Name>IBacktestInfrastructure</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

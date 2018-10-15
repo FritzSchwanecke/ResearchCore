@@ -2,9 +2,8 @@
 
 namespace IReserachCore.Helper.Time.DayCounter
 {
-    public interface IDcAct360
+    public interface IDcAct360:IDayCounter
     {
-        eDcConvention DcConvention { get; }
-        double YearFraction(DateTime startDate, DateTime endDate);
+
     }
 }
