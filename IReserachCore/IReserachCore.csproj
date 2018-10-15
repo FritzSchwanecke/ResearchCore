@@ -105,7 +105,6 @@
     <Compile Include="Helper\Time\DayCounter\IDayCounter.cs" />
     <Compile Include="Helper\Time\DayCounter\IDcAct360.cs" />
     <Compile Include="Helper\Time\IHolidayCalendar.cs" />
-    <Compile Include="IHelloWorld.cs" />
     <Compile Include="Instruments\Cash\eIndexType.cs" />
     <Compile Include="Instruments\Cash\eRatesPosition.cs" />
     <Compile Include="Instruments\Cash\IDeposit.cs" />

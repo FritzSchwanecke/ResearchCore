@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F100912B-43E2-4E89-8776-E1E1F509B72C}</ProjectGuid>
+    <ProjectGuid>{54FC0395-32F6-4C4E-8EF5-994A444595E5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ResearchCoreUnitTests</RootNamespace>
@@ -36,7 +36,61 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Carbon.Data.Protection, Version=0.19.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\ResearchCore\packages\Carbon.Data.Protection.0.19.1\lib\netstandard2.0\Carbon.Data.Protection.dll</HintPath>
+    </Reference>
+    <Reference Include="Carbon.Json, Version=1.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\ResearchCore\packages\Carbon.Json.1.7.0\lib\netstandard2.0\Carbon.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Carbon.Packaging, Version=1.27.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\ResearchCore\packages\Carbon.Packaging.1.27.2\lib\netstandard2.0\Carbon.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="Carbon.Storage, Version=1.15.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\ResearchCore\packages\Carbon.Storage.1.15.1\lib\netstandard2.0\Carbon.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="Carbon.VersionControl, Version=1.8.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\ResearchCore\packages\Carbon.VersionControl.1.8.1\lib\netstandard2.0\Carbon.VersionControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Carbon.Versioning, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\ResearchCore\packages\Carbon.Versioning.1.5.0\lib\netstandard2.0\Carbon.Versioning.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonServiceLocator, Version=2.0.3.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\..\ResearchCore\packages\Unity.5.8.6\lib\net46\CommonServiceLocator.dll</HintPath>
+    </Reference>
+    <Reference Include="GitHub, Version=1.12.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\ResearchCore\packages\GitHub.1.12.1\lib\netstandard2.0\GitHub.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\ResearchCore\packages\System.Runtime.CompilerServices.Unsafe.4.5.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\ResearchCore\packages\System.Text.Encodings.Web.4.5.0\lib\netstandard2.0\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\ResearchCore\packages\System.Threading.Tasks.Extensions.4.5.1\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Abstractions, Version=3.3.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\..\ResearchCore\packages\Unity.5.8.6\lib\net46\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Configuration, Version=5.2.1.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\..\ResearchCore\packages\Unity.5.8.6\lib\net46\Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container, Version=5.8.6.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\..\ResearchCore\packages\Unity.5.8.6\lib\net46\Unity.Container.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Interception, Version=5.5.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\..\ResearchCore\packages\Unity.5.8.6\lib\net46\Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Interception.Configuration, Version=5.1.4.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\..\ResearchCore\packages\Unity.5.8.6\lib\net46\Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RegistrationByConvention, Version=2.1.5.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\..\ResearchCore\packages\Unity.5.8.6\lib\net46\Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ServiceLocation, Version=2.1.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\..\ResearchCore\packages\Unity.5.8.6\lib\net46\Unity.ServiceLocation.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -52,8 +106,24 @@
   </Choose>
   <ItemGroup>
     <Compile Include="HelloWorldTests.cs" />
+    <Compile Include="Helper\Time\DayCounter\DcUnitTest.cs" />
+    <Compile Include="Pricer\BlackScholes\PeterJaeckleAnalyticalPricingUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ResearchCore\IReserachCore\IReserachCore.csproj">
+      <Project>{FB03FDB5-8C41-4AE0-893E-2C3F4424304D}</Project>
+      <Name>IReserachCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ResearchCore\ResearchCore.csproj">
+      <Project>{4356695A-B5AD-4D69-9941-C66E25330A72}</Project>
+      <Name>ResearchCore</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

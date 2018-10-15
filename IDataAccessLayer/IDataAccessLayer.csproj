@@ -86,10 +86,6 @@
     <Compile Include="StoreData\IStoreDataToHardDisc.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Research\ResearchCore\ResearchCore.csproj">
-      <Project>{4356695A-B5AD-4D69-9941-C66E25330A72}</Project>
-      <Name>ResearchCore</Name>
-    </ProjectReference>
     <ProjectReference Include="..\IReserachCore\IReserachCore.csproj">
       <Project>{fb03fdb5-8c41-4ae0-893e-2c3f4424304d}</Project>
       <Name>IReserachCore</Name>

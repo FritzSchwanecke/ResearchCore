@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using IReserachCore.Instruments.Options;
-using ResearchCore.Instruments.Options;
 
 namespace IDataAccessLayer.LoadData
 {
