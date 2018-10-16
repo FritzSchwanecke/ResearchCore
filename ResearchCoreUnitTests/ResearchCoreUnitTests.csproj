@@ -105,7 +105,6 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="HelloWorldTests.cs" />
     <Compile Include="Helper\Time\DayCounter\DcUnitTest.cs" />
     <Compile Include="Pricer\BlackScholes\PeterJaeckleAnalyticalPricingUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
